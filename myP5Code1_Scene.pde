@@ -9,7 +9,7 @@ setup = function() {
   textSize(30);
 
   while(crossiantX < 300){
-    text("🥐", crossiantX, 85);
+    text("🍧", crossiantX, 85);
     crossiantX += 40;
   }
 
@@ -19,6 +19,10 @@ setup = function() {
 }
 
 draw = function(){   
+  if(mousePressed){
+  xPositions.push(mouseX);
+  yPositions.push(mouseY);
+  }
 
 }
 
