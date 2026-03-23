@@ -1,18 +1,19 @@
-var starXPos = [];
-var starYPos = [];
-var star = "⭐️";
-var starTotal = 100;
+var starXPos = [1000];
+var starYPos = [1000];
+var star = "🍭"; //distracter
+var starTotal = 1000;
 
 var planetXPos = [];
 var planetYPos = [];
-var planet = "🪐";
-var planetTotal = 3;
+var planet = "🦄"; //find it
+var planetTotal = 5;
 var planetFound = 0;
 
 setup = function() {
    size(600, 450); 
 
    reset();
+   
 }
 
 draw = function(){   
