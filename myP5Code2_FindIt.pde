@@ -8,6 +8,11 @@ var planetYPos = [];
 var planet = "🦄"; //find it
 var planetTotal = 5;
 var planetFound = 0;
+var x = 0;
+while(x < 400){
+  text("", x, 340);
+   x += 20;
+}
 
 setup = function() {
    size(600, 450); 
