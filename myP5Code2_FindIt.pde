@@ -18,7 +18,7 @@ setup = function() {
    size(600, 450); 
 
    reset();
-   
+
 }
 
 draw = function(){   
@@ -30,6 +30,9 @@ draw = function(){
    }
 
   display();
+     for (var i = 55; i < 350 ; i+=20) {
+       text(')
+     }
 }
 
 
