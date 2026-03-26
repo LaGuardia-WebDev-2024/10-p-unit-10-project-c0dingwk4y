@@ -14,12 +14,14 @@ while(x < 400){
    x += 20;
 }
 
+
 setup = function() {
    size(600, 450); 
+   
 
    reset();
 
-}
+};
 
 draw = function(){   
 
@@ -31,8 +33,15 @@ draw = function(){
 
   display();
      for (var i = 55; i < 350 ; i+=20) {
-       text(')
+       // text(')
      }
+     // for(start; how long; change)
+   for (var x=0; x<400; x+=20){
+    line(0, x, 400, x);
+   }
+   for (var i = 5; i < 350 ; i+=20) {
+      text('🍭🍭🍭', 50, i);
+   }
 }
 
 
