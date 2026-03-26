@@ -44,7 +44,7 @@ draw = function(){
    for (var i = 5; i < 350 ; i+=20) {
       text('🍭🍭🍭', 50, i);
    }
-   var mylols = ["find", "the", "missing", "Fruits"];
+   var mylols = ["find", "the", "missing", "Unicorns"];
     fill(255, 255, 255);
     text(mylols[0], 10, 30);
    text(mylols[1], 10, 80);
