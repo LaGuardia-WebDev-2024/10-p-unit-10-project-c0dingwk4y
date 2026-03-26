@@ -1,12 +1,12 @@
-var starXPos = [1000];
-var starYPos = [1000];
+var starXPos = [700];
+var starYPos = [700];
 var star = "🍭"; //distracter
 var starTotal = 1000;
 
 var planetXPos = [];
 var planetYPos = [];
 var planet = "🦄"; //find it
-var planetTotal = 5;
+var planetTotal = 10;
 var planetFound = 0;
 var x = 0;
 while(x < 400){
@@ -29,6 +29,8 @@ draw = function(){
     if(key == 'r'){
       reset();
     }
+
+  
    }
 
   display();
@@ -42,6 +44,29 @@ draw = function(){
    for (var i = 5; i < 350 ; i+=20) {
       text('🍭🍭🍭', 50, i);
    }
+   var mylols = ["find", "the", "missing", "Fruits"];
+    fill(255, 255, 255);
+    text(mylols[0], 10, 30);
+   text(mylols[1], 10, 80);
+   text(mylols[2], 10, 130);
+   text(mylols[3], 10, 180);
+   text(mylols[4], 10, 30);
+ var move = 1
+ var mylols = function() {
+   for (var i = 0; i < yPositions. length; i++)
+        text("🍭", xPositions[i], yPositions[i]);
+        xPositions[i]+= move;
+
+        if(xPositions[i] > 600) {
+          move = -1
+        }
+
+         if(xPositions[i] < -200) {
+          move = 1
+        }
+ };
+ 
+
 }
 
 
@@ -60,7 +85,7 @@ var check = function(xClick, yClick){
 }
 
 var display = function(){
-  background(100,100,100);
+  background(255, 181, 192);
 
   fill(200,200,0);
   textSize(20);
